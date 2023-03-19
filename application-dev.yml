@@ -1,6 +1,15 @@
 spring:
-  application:
-    name: config-dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
 eureka:
   instance:
     prefer-ip-address: true
